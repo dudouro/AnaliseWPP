@@ -125,24 +125,6 @@ uploaded_file = st.sidebar.file_uploader(
 )
 
 show_export_tutorial()
-
-with st.sidebar:
-    st.markdown("---")
-    st.markdown("**Desenvolvido por:**")
-    
-    linkedin_url = "https://www.linkedin.com/in/dudouro/"  # Ex: "https://www.linkedin.com/in/seu-perfil/"
-    image_path = "https://media.licdn.com/dms/image/v2/D4D03AQG7h4j_9qWfig/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1707403966969?e=1749081600&v=beta&t=LC2fCZ4vZCFEidr12cXOc3SpTBsgxwLymrOQu1aBiJM"  # Caminho para sua imagem
-    
-    try:
-        st.markdown(
-            f'<a href="{linkedin_url}" target="_blank">'
-            f'<img src="{image_path}" width="150" style="border-radius: 5px; margin-top: 10px; transition: transform 0.2s;" '
-            'onmouseover="this.style.transform=\'scale(1.05)\'" '
-            'onmouseout="this.style.transform=\'scale(1)\'"></a>',
-            unsafe_allow_html=True
-        )
-    except FileNotFoundError:
-        st.warning("Assinatura não encontrada")
 # ==================================================
 # CORPO PRINCIPAL
 # ==================================================
@@ -299,3 +281,22 @@ if uploaded_file is not None:
 
 else:
     st.info("ℹ️ Por favor, carregue um arquivo de conversa do WhatsApp para iniciar a análise")
+
+
+with st.sidebar:
+    st.markdown("---")
+    st.markdown("**Desenvolvido por:**")
+    
+    linkedin_url = "https://www.linkedin.com/in/dudouro/"  # Ex: "https://www.linkedin.com/in/seu-perfil/"
+    image_path = "https://media.licdn.com/dms/image/v2/D4D03AQG7h4j_9qWfig/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1707403966969?e=1749081600&v=beta&t=LC2fCZ4vZCFEidr12cXOc3SpTBsgxwLymrOQu1aBiJM"  # Caminho para sua imagem
+    
+    try:
+        st.markdown(
+            f'<a href="{linkedin_url}" target="_blank">'
+            f'<img src="{image_path}" width="150" style="border-radius: 5px; margin-top: 10px; transition: transform 0.2s;" '
+            'onmouseover="this.style.transform=\'scale(1.05)\'" '
+            'onmouseout="this.style.transform=\'scale(1)\'"></a>',
+            unsafe_allow_html=True
+        )
+    except FileNotFoundError:
+        st.warning("Assinatura não encontrada")
