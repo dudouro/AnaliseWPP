@@ -2,3 +2,4 @@ plotly
 wordcloud
 nltk
 textblob
+openpyxl
