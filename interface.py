@@ -253,7 +253,7 @@ if uploaded_file is not None:
             stopwords=stopwords_pt
         ).generate(text)
         
-        st.image(wordcloud.to_image(), use_column_width=True)
+        st.image(wordcloud.to_image(), use_container_width=True)
     else:
         st.warning("Não há mensagens textuais para exibir")
 
