@@ -285,7 +285,7 @@ else:
 
 with st.sidebar:
     st.markdown("---")
-    st.markdown("**Desenvolvido por:**")
+    st.markdown("**LinkedIn do Criador:**")
     
     linkedin_url = "https://www.linkedin.com/in/dudouro/"  # Ex: "https://www.linkedin.com/in/seu-perfil/"
     image_path = "https://media.licdn.com/dms/image/v2/D4D03AQG7h4j_9qWfig/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1707403966969?e=1749081600&v=beta&t=LC2fCZ4vZCFEidr12cXOc3SpTBsgxwLymrOQu1aBiJM"  # Caminho para sua imagem
